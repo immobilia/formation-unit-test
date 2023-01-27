@@ -24,7 +24,7 @@ public class Calculator {
     private void neSertaRien() {
 
     }
-    private void neSertaRien2() {
+    public void neSertaRienPublic() {
 
     }
 
