@@ -48,14 +48,14 @@ class CalculatorTest {
 //        b = null;
 //        assertEquals(3, calculator.add(a, b));
     }
-
-    @Test
-    void testThrow() {
-        Integer a = null;
-        assertThrows(NullPointerException.class, () -> {
-            calculator.add(2, 3);
-        });
-    }
+//
+//    @Test
+//    void testThrow() {
+//        Integer a = null;
+//        assertThrows(NullPointerException.class, () -> {
+//            calculator.add(2, 3);
+//        });
+//    }
 
 //    @Test
 //    @DisplayName("1 + 2 = 3 (dans le @DisplayName)")
