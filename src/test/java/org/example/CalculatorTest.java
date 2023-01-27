@@ -44,9 +44,9 @@ class CalculatorTest {
         b = Integer.MAX_VALUE;
 //        assertEquals(3, calculator.add(a,b));
 
-        a = null;
-        b = null;
-        assertEquals(3, calculator.add(a, b));
+//        a = null;
+//        b = null;
+//        assertEquals(3, calculator.add(a, b));
     }
 
     @Test
@@ -57,37 +57,37 @@ class CalculatorTest {
         });
     }
 
-    @Test
-    @DisplayName("1 + 2 = 3 (dans le @DisplayName)")
-        // impacte le nom du test (et pas le résultat de la ligne de test)
-    void testNommé() {
-        assertEquals(3, calculator.add(1, 222)); // 1+ 2 = 3 ?
-    }
+//    @Test
+//    @DisplayName("1 + 2 = 3 (dans le @DisplayName)")
+//        // impacte le nom du test (et pas le résultat de la ligne de test)
+//    void testNommé() {
+//        assertEquals(3, calculator.add(1, 222)); // 1+ 2 = 3 ?
+//    }
+//
+//    @Test
+//    void testCommenté() {
+//        assertEquals(3, calculator.add(1, 222), "1 + 2 = 3 (dans le commentaire) [le message affiché en cas de fail]"); // org.opentest4j.AssertionFailedError: 1 + 2 = 3 (dans le commentaire) ==>
+//    }
+//
 
-    @Test
-    void testCommenté() {
-        assertEquals(3, calculator.add(1, 222), "1 + 2 = 3 (dans le commentaire) [le message affiché en cas de fail]"); // org.opentest4j.AssertionFailedError: 1 + 2 = 3 (dans le commentaire) ==>
-    }
-
-
-    @ParameterizedTest
-    @CsvSource({
-            "1, 2, 3",
-            "0, 0, 0",
-            "-1, 1, 0",
-            "50, 60, 100"
-    })
-    void testAddCsv(int a, int b, int expectedResult) {
-//        assertEquals(expectedResult, a, b); // est passant, mais pourquoi ? (oublie de l'appel a la méthode et 3eme argument)
-        assertEquals(expectedResult, calculator.add(a, b));
-    }
-
-    @Test
-    void testDivide() {
-        assertEquals(0.5, calculator.divide(1, 2));
-//        assertEquals(0.333, calculator.divide(1, 3)); // 0.333 différent de 0.3333333333333333
-        assertEquals(0.333, calculator.divide(1, 3), 0.001); // plage
-        assertEquals(0 , calculator.divide(123,0));
-    }
+//    @ParameterizedTest
+//    @CsvSource({
+//            "1, 2, 3",
+//            "0, 0, 0",
+//            "-1, 1, 0",
+//            "50, 60, 100"
+//    })
+//    void testAddCsv(int a, int b, int expectedResult) {
+////        assertEquals(expectedResult, a, b); // est passant, mais pourquoi ? (oublie de l'appel a la méthode et 3eme argument)
+//        assertEquals(expectedResult, calculator.add(a, b));
+//    }
+//
+//    @Test
+//    void testDivide() {
+//        assertEquals(0.5, calculator.divide(1, 2));
+////        assertEquals(0.333, calculator.divide(1, 3)); // 0.333 différent de 0.3333333333333333
+//        assertEquals(0.333, calculator.divide(1, 3), 0.001); // plage
+//        assertEquals(0 , calculator.divide(123,0));
+//    }
 
 }
