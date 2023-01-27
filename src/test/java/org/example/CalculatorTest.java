@@ -30,14 +30,6 @@ class CalculatorTest {
     void teardown() {
         System.out.println("afterEach");
         System.out.println("afterEach");
-        System.out.println("afterEach");
-        System.out.println("afterEach");
-        System.out.println("afterEach");
-        System.out.println("afterEach");
-        System.out.println("afterEach");
-        System.out.println("afterEach");
-        System.out.println("afterEach");
-        System.out.println("afterEach");
     }
 
     @Test
