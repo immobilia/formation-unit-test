@@ -90,4 +90,6 @@ class CalculatorTest {
 //        assertEquals(0 , calculator.divide(123,0));
 //    }
 
+    // Avec activation du Sonar Cloud
+
 }
