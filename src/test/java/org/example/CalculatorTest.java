@@ -92,4 +92,10 @@ class CalculatorTest {
 
     // Avec activation du Sonar Cloud
 
+    @Test
+    void testCoverage() {
+        calculator.neSertaRienPublic();
+    }
+
+
 }
