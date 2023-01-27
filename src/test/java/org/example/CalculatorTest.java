@@ -32,6 +32,8 @@ class CalculatorTest {
         System.out.println("afterEach");
         System.out.println("afterEach");
         System.out.println("afterEach");
+        System.out.println("afterEach");
+        System.out.println("afterEach");
     }
 
     @Test
