@@ -29,7 +29,6 @@ class CalculatorTest {
     @AfterEach
     void teardown() {
         System.out.println("afterEach");
-        System.out.println("afterEach");
     }
 
     @Test
